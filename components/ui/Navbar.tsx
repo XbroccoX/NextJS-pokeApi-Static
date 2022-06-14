@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import { Link, Text, Spacer, Image, useTheme } from "@nextui-org/react"
-import { ActiveLink } from './ActiveLink';
 
 export const Navbar = () => {
 
