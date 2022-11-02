@@ -4,6 +4,7 @@ import { Layout } from "../../components/layouts"
 import { Pokemon } from '../../interfaces'
 import { PokemonInformation } from '../../components/pokemon';
 import { getPokemonInfo } from '../../utils';
+import Typography from '@mui/material/Typography'
 
 interface Props {
     pokemon: Pokemon;
@@ -13,7 +14,8 @@ interface Props {
 const PokemonPage: NextPage<Props> = ({ pokemon }) => {
     return (
         <Layout title={pokemon.name}>
-            <PokemonInformation pokemon={pokemon} />
+            <Typography variant="h1" color="initial">TE AMO MI AMOR, La respuesta está en la letra mayúscula de cada tarjeta</Typography>
+            {/* <PokemonInformation pokemon={pokemon} /> */}
         </Layout>
     )
 }
