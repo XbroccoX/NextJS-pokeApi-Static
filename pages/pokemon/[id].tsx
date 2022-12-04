@@ -6,6 +6,7 @@ import { PokemonInformation } from '../../components/pokemon';
 import { getPokemonInfo } from '../../utils';
 import Image from 'next/image';
 import wippie from '../../public/images/WIPPIE.png'
+import wippieManual from '../../public/images/Manual_de_Instrucciones.png'
 
 interface Props {
     pokemon: Pokemon;
@@ -16,7 +17,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
     return (
         <Layout title={pokemon.name}>
             <div style={{ width: '100%' }}>
-                <Image src={wippie} />
+                <Image src={wippieManual} />
             </div>
             {/* <PokemonInformation pokemon={pokemon} /> */}
         </Layout>
