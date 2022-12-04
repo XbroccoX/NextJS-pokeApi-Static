@@ -1,6 +1,7 @@
 import { FC, PropsWithChildren } from 'react'
 import Head from 'next/head'
 import { Navbar } from '../ui/Navbar';
+import { Navbarborrar } from '../ui';
 
 
 interface Props {
@@ -27,7 +28,9 @@ export const Layout: FC<PropsWithChildren<Props>> = ({ children, title }) => {
                 <meta property="og:image" content={`${origin}/images/banner.png`} />
             </Head>
 
-            <Navbar />
+            {/* <Navbar /> */}
+            <Navbarborrar />
+
 
             <main style={{
                 padding: '0 20px'

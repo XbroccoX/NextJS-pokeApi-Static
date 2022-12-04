@@ -4,6 +4,8 @@ import { Layout } from "../../components/layouts"
 import { Pokemon } from '../../interfaces'
 import { PokemonInformation } from '../../components/pokemon';
 import { getPokemonInfo } from '../../utils';
+import Image from 'next/image';
+import wippie from '../../public/images/WIPPIE.png'
 
 interface Props {
     pokemon: Pokemon;
@@ -13,7 +15,9 @@ interface Props {
 const PokemonPage: NextPage<Props> = ({ pokemon }) => {
     return (
         <Layout title={pokemon.name}>
-            <h1 color='white'>TE AMO MI AMOR, La respuesta está en la letra mayúscula de cada tarjeta</h1>
+            <div style={{ width: '100%' }}>
+                <Image src={wippie} />
+            </div>
             {/* <PokemonInformation pokemon={pokemon} /> */}
         </Layout>
     )
